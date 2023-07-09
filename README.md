@@ -9,3 +9,10 @@
 - Deployed server on render.com
 
 <https://express-server-ku2a.onrender.com>
+
+## Lab 3
+
+- Reconfigure server so it's more streamlined.
+- Connect to db
+- Add CRUD
+- Add test
