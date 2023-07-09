@@ -5,7 +5,7 @@ function handler500(err, req, res, next) {
 
     const errorObj = {
         status: 500,
-        message: error,
+        message: 'Need valid entry',
     };
     res.status(500).json(errorObj);
 }
