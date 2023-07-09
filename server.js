@@ -15,21 +15,22 @@ server.use(logger);
 
 server.use(express.json());
 
-server.get('/', (req, res) => res.send('You\'re here!'));
+server.get('/', (req, res) => res.send('You are here'));
 
-server.get('/welcome', (req, res) => {
+server.get('/person', (req, res) => {
     if (!req.query.name) {
         throw new Error('Need valid entry');
     }
     res.send(`Welcome, ${req.query.name}`);
 });
 
-server.post('/welcome', (req, res) => {
-    res.send(`Welcome, ${req.body.name}`);
-});
 
 server.get('/welcome/:person', (req, res) => {
     res.send(`Welcome, ${req.params.person}`);
+});
+
+server.post('/welcome', (req, res) => {
+    res.send(`Welcome, ${req.body.name}`);
 });
 
 server.use(handler404);
