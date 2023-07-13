@@ -3,7 +3,10 @@ const { start } = require('./server.js');
 const { dbConnection } = require('./models/index.js');
 const PORT = process.env.PORT || 3000;
 
-dbConnection.sync()
+dbConnection
+.sync()
 .then(() => {
  start(PORT);
-}).catch(console.log(error));
+}).catch(error => {
+    console.log(error);
+});
