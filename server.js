@@ -36,7 +36,7 @@ server.use(movieRoute);
 //     res.send(`Welcome, ${req.body.name}`);
 // });
 
-server.use(handler404);
+server.use('*', handler404);
 server.use(handler500);
 
 module.exports = { server, start };
