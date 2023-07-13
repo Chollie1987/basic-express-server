@@ -18,6 +18,18 @@
 - Add test
 <https://express-server-ku2a.onrender.com>
 
+
 ## Lab 4
 
-
+- Create 2 data models using Sequelize
+- Create a Collection Class
+- Add an association between models
+    -One-To-One
+    -One-To-Many
+    -Many-To-Many
+- Create router module for each data model created
+- Add a Record
+- Get All Records
+- Get One Record
+- Update A Record
+- Delete A Record
