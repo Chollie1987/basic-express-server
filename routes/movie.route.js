@@ -14,6 +14,7 @@ router.delete('/movie/:id', deleteMovie);
 
 async function getMovie(req, res) {
     let allMovies = await Movie.findAll();
+    console.log(allMovies);
     res.status(200).json(allMovies);
 }
 
@@ -27,7 +28,7 @@ async function updateMovie(req, res) {
     const id = parseInt(req.params.id);
     const updatedMovieObj = req.body;
      let chosenMovie = await Movie.findOne({where: { id: id } });
-     let updatedMovie = await chosenMovie.update(updatedMovie);
+     let updatedMovie = await chosenMovie.update(updatedMovieObj);
      res.status(200).json(updatedMovie);
 }
 
