@@ -1,6 +1,6 @@
 'use strict';
 
-const Movie = (dbConnection, DataTypes) => {
+const Movie = (dbConnection, DataTypes) => 
     dbConnection.define('Movie', {
         title: {
           type: DataTypes.STRING,
@@ -10,6 +10,5 @@ const Movie = (dbConnection, DataTypes) => {
             type: DataTypes.STRING,
         },
     });
-};
 
 module.exports = Movie;

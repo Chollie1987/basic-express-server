@@ -18,6 +18,8 @@ server.use(express.json());
 
 server.get('/', (req, res) => res.send('You are here'));
 
+server.use(movieRoute);
+
 // server.get('/person', (req, res) => {
 //     if (!req.query.name) {
 //         throw new Error('Need valid entry');
