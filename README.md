@@ -21,6 +21,13 @@
 
 ## Lab 4
 
+1. Partner for review
+    - My partner was Raymond Ruazol and Johnathan Brooks
+        - Raymond's code was sound and I didn't have much to comment on except that I like the extensiveness of his models.
+    <https://github.com/Chollie1987/basic-express-server/pull/7>
+
+    <https://github.com/Chollie1987/me-raymond-review>
+
 - Create 2 data models using Sequelize
 - Create a Collection Class
 - Add an association between models
