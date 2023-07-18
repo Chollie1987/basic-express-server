@@ -7,6 +7,7 @@ const validator = require('./middleware/validator.js');
 const handler500 = require('./errorHandlers/500.js');
 const handler404 = require('./errorHandlers/404.js');
 const movieRoute = require('./routes/movie.route.js');
+const directorRoute = require('./routes/director.route.js');
 
 function start(port) {
     server.listen(port, () => console.log(`Working on port ${port}`));
@@ -19,6 +20,7 @@ server.use(express.json());
 server.get('/', (req, res) => res.send('You are here'));
 
 server.use(movieRoute);
+server.use(directorRoute);
 
 // server.get('/person', (req, res) => {
 //     if (!req.query.name) {
